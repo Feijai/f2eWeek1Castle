@@ -1,0 +1,44 @@
+// Require
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+//veriable 
+@import "./_variables";   // 自定義的變數 scss 檔
+
+
+@font-face {
+    font-family: 'Cubic';
+    src: url('../assets/Cubic_11_1.013_R.woff') format('woff');
+}
+
+.cublic{
+    font-family: 'Cubic';
+}
+
+
+.pCenter{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tree1Style{
+    width: 165px;
+    height: 165px;
+}
+  
+.tree2Style{
+    width: 153px;
+    height: 153px;
+}
+  
+.hanaStyle{
+    width: 85px;
+    height: 85px;
+}
+
+.chairStyle{
+    width: 159px;
+    height: 112px;
+}
