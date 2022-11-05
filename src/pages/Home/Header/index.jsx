@@ -1,23 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
-import logo from '../../assets/logo.png'
+import logo from '../../../assets/logo.png'
 import { Link } from 'react-router-dom'
-import HeaderButton from './HeaderButton'
-
-const HeaderCss = styled.div`
-    height:5rem;
-    .logo{
-        height:29px;
-        width:230px;
-    }
-    .menu{
-        column-gap:16px;
-    }
-    a{
-        text-decoration: none;
-        color:white;
-    }
-`
+import { HeaderCss, HeaderButtonCss } from './style'
 
 const Header = () => {
     return (
@@ -35,8 +19,8 @@ const Header = () => {
                         <Link to='/' className="">
                             <span className=''>求職專區</span>
                         </Link>
-                        <HeaderButton text={'註冊報名'} />
-                        <HeaderButton text={'登入'} />
+                        <HeaderButtonCss>註冊報名</HeaderButtonCss>
+                        <HeaderButtonCss>登入</HeaderButtonCss>
                     </div>
                 </div>
             </div>

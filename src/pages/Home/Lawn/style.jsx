@@ -5,6 +5,10 @@ export const LawnCss = styled.div`
     height:620px;
     background-image:url(${glass1});
     background-position:center center;
+    .blue{
+        width:147px;
+        height:121px;
+    }
     .yuusha{
         top:-10%;
         left:50%;

@@ -7,9 +7,11 @@ import chair from '../../../assets/chair.png'
 import blue from '../../../assets/blue.png'
 import yuusha from '../../../assets/yuusha.png'
 
-const Lawn = () => {
+
+const Lawn = ({lawnRef}) => {
+    
     return (
-        <LawnCss className='position-relative container'>
+        <LawnCss className='position-relative' ref={lawnRef}>
             <img src={yuusha} alt="" className='yuusha position-absolute'/>
             <img src={tree1} alt="" className='tree1 position-absolute tree1Style' />
             <img src={tree1} alt="" className='tree2 position-absolute tree1Style' />

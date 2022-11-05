@@ -11,10 +11,24 @@
     src: url('../assets/Cubic_11_1.013_R.woff') format('woff');
 }
 
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0!important;
+}
+p{
+    margin-bottom: 0!important;
+}
+
+body{
+    font-family: 'Cubic'!important;
+}
+
 .cublic{
     font-family: 'Cubic';
 }
 
+.toGray{
+    -webkit-filter:grayscale(1);
+}
 
 .pCenter{
     position:absolute;
@@ -41,4 +55,28 @@
 .chairStyle{
     width: 159px;
     height: 112px;
+}
+
+.textStroke{
+    /*  邊框 */
+    -webkit-text-stroke: 1px #FF392D;
+    filter: 
+        drop-shadow(0 0 2px #FF392D) ,
+
+}
+
+.linerLite{
+    background: linear-gradient(180deg, #FFB547 0%, #FFEF5B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
+.dCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mt40{
+    margin-top: 2.5rem;
 }

@@ -11,7 +11,7 @@ const TitleCss = styled.div`
     left:40px;
     top:43px;
 
-    padding : 0 1.5625rem;
+    padding : 0 calc(1.5625rem - 12px);
     .menu{
         font-size:12.5rem;
         font-weight:400;
