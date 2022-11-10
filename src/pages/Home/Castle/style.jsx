@@ -79,9 +79,10 @@ export const TitleCss = styled.div`
             font-size:7.5rem;
         }
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 992px) {
         .menuTitle{
             font-size:5rem;
         }
     }
+
 `
