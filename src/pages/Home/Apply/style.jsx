@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ApplyCss = styled.div`
+height:100vh;
 .container{
     padding-top:5rem;
     flex-direction:column;
@@ -57,9 +58,10 @@ export const ApplyCss = styled.div`
 .ball5{
     margin-right:43px;
 }
-.text{
+.applyText{
     border: 12px solid white;
     width:79.86%;
+    height:246px;
     padding:2rem 9.375rem 2rem 7.8125rem;
     margin-top:1.5625rem;
     margin-bottom:7.75rem;

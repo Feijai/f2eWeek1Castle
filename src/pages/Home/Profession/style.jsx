@@ -2,12 +2,13 @@ import styled from "styled-components"
 import thunder from '../../../assets/thunder.png'
 
 export const ProfessionCss = styled.div`
-    height:844px;
+    height:100vh;
     background-image: url(${thunder});
     background-repeat: repeat;
     background-size: 60px 60px;
     .container{
         padding-top:2.5rem;
+        height:100%;
     }
     .title{
         color:#FFE600;
@@ -61,5 +62,11 @@ export const ProfessionCss = styled.div`
         font-weight: 400;
         font-size: 2rem;
         line-height: 37px;
+    }
+
+    @media (min-width: 1400px){
+        .container{
+            max-width:calc(100% - 160px);
+        }
     }
 `

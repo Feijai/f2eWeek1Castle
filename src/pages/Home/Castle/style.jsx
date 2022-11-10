@@ -43,3 +43,45 @@ export const CastleCss = styled.div`
         left:71.15%;
     }
 `
+
+
+export const TitleCss = styled.div`
+    width: calc(100% - 5rem);
+    height: 235px;
+    color: white;
+    border: 12px solid #FFFFFF;
+    border-radius: 33px;
+    left:40px;
+    top:43px;
+    padding : 0 calc(1.5625rem - 12px);
+    .menuTitle{
+        font-size:12.5rem;
+        font-weight:400;
+        line-height:14.5rem;
+
+    }
+    .endWord{
+        position:absolute;
+        bottom:0;
+        background-color:black;
+        right:41px;
+        font-size:2.5rem;
+        font-weight:400;
+        transform : translate(0%,60%)
+    }
+    @media (max-width: 1400px){
+        .menuTitle{
+            font-size:10rem;
+        }
+    }
+    @media (max-width: 1200px) {
+        .menuTitle{
+            font-size:7.5rem;
+        }
+    }
+    @media (max-width: 1000px) {
+        .menuTitle{
+            font-size:5rem;
+        }
+    }
+`

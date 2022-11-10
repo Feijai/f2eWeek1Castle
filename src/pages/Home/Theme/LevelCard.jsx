@@ -5,9 +5,9 @@ const LevelCard = (props) => {
     const { pic, title, text, company, week } = props
     console.log(text)
     return (
-        <LevelCardCss>
+        <LevelCardCss className={`${week}`} >
             <img src={pic} alt="" className='w-100' />
-            <div className='mt-3'>
+            <div className='mt-3 '>
                 <span className='week'>{week}</span>
                 <button className='ms-3 themeButton'>{text}</button>
             </div>
@@ -23,7 +23,7 @@ const LevelCard = (props) => {
                 <button className='company text-white'>{company}</button>
             </div>
 
-        </LevelCardCss>
+        </LevelCardCss >
     )
 }
 

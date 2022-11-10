@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ThemeCss = styled.div`
-    height:881px;
+    height:100vh;
     padding-top:43px;
-    .title{
+    .themeTitle{
         font-size:5.625rem;
         color:#FFE600
     }

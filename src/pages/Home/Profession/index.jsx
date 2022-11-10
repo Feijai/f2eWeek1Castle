@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { ProfessionCss } from './style'
-import pumpkinMan from '../../../assets/pumpkinMan.png'
+import pumpkinMan from '../../../assets/pumpkinMan.gif'
 import redshirt from '../../../assets/redshirt.png'
 import redman from '../../../assets/redman.png'
 import pinkshirt from '../../../assets/pinkshirt.png'
@@ -13,11 +13,11 @@ import greenshirt from '../../../assets/greenshirt.png'
 import greenman from '../../../assets/greenman.png'
 import waterpig from '../../../assets/waterpig.png'
 import waterpigAll from '../../../assets/waterpigAll.png'
-
+import liting from '../../../assets/liting.gif'
 
 const Profession = () => {
     const data = [
-        { name: 'no', text: '?', people: pumpkinMan },
+        { name: 'no', text: '選擇你的角色', people: pumpkinMan },
         { name: 'redshirt', text: 'UI新手', people: redman },
         { name: 'pinkshirt', text: 'UI 設計師', people: pinkman },
         { name: 'pig', text: 'UI生物', people: pigAll },
@@ -41,16 +41,17 @@ const Profession = () => {
         e.target.style.border = "6px solid #FFFFFF"
         setRole(...handleFilterData('no'))
     }
-
+    console.log(role)
     return (
-        <ProfessionCss className='bg-black text-white'>
+        <ProfessionCss className='bg-black text-white position-relative'>
+            {role?.name==='no' && <img src={liting} alt="" className='position-absolute s-0 top-0 h-100'/>}
+            {role?.name==='no' && <img src={liting} alt="" className='position-absolute end-0 top-0 h-100'/>}
             <div className="container bg-black">
                 <h2 className='title text-center cublic'>互動式網頁設計</h2>
                 <div className='chooseProfession d-flex'>
                     <div className='position-relative'>
                         <img src={role.people} alt="" className={`pumpkinMan ${role.name === 'no' ? "toGray" : null}`} />
                         <h3 className={`chooseText cublic text-center ${role.name === 'no' ? null : 'textStroke linerLite'}`}>{role.text}</h3>
-                        {role.name === 'no' ? <span className='ques cublic text-black'>?</span> : null}
                     </div>
                     <div className='role'>
                         <h4 className='chooseRole cublic text-center textStroke linerLite'>
