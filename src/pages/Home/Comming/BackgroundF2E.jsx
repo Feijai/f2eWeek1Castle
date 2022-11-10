@@ -2,8 +2,8 @@ import React from 'react'
 import { BackgroundF2ECss } from './style'
 export default function BackgroundF2E() {
     return (
-        <BackgroundF2ECss class="section4 position-absolute">
-            <ul class="loop text-blakc">
+        <BackgroundF2ECss className="section4 position-absolute">
+            <ul className="loop text-blakc">
                 <li>
                     <span> THE F2E THE F2E THE F2E THE F2E </span>
                     <span> THE F2E THE F2E THE F2E THE F2E </span>
