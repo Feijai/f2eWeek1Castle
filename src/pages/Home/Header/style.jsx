@@ -14,6 +14,21 @@ export const HeaderCss = styled.div`
         text-decoration: none;
         color:white;
     }
+    .hamberger{
+        row-gap:9px;
+        flex-direction: column;
+        margin-right:1rem;
+        div{
+            width:30px;
+            height:0px;
+            border: 1.5px solid #B4B4B4;
+            border-radius: 50px;
+        }
+    }
+    @media (min-width:992px){
+        
+    }
+
 `
 
 

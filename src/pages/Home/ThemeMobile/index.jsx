@@ -1,5 +1,6 @@
 import React from "react";
-import { ThemeMobileCss } from "./style";
+import { ThemeMobileCss, MobileSwiperCss } from "./style";
+import MobileSwiper from "./MobileSwiper";
 
 export default function ThemeMobile() {
   return (
@@ -8,10 +9,7 @@ export default function ThemeMobile() {
         <div className="murasaki position-absolute">
           <div className="mask position-relative w-100 h-100"></div>
         </div>
-        <h2
-          className="text-center themeTitle"
-          dataStorke="年度最強合作"
-        >
+        <h2 className="text-center themeTitle" dataStorke="年度最強合作">
           年度最強合作
         </h2>
         <h2 className="text-center themeTitle" dataStorke="三大主題來襲">
@@ -26,6 +24,9 @@ export default function ThemeMobile() {
         <p className="text text-black text-center position-relative">
           Scrum 新手村
         </p>
+        <MobileSwiperCss >
+          <MobileSwiper />
+        </MobileSwiperCss>
       </div>
     </ThemeMobileCss>
   );

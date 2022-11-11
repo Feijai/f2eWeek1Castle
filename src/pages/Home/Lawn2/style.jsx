@@ -37,7 +37,8 @@ export const Lawn2Css = styled.div`
     }
     .dialogue{
         /* width:79.90%; */
-        width:75rem;
+        max-width:1200px;
+        width:100%;
         height:246px;
         bottom:-10%;
         left:50%;

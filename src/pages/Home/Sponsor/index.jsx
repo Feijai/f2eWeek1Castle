@@ -21,7 +21,7 @@ const Sponsor = () => {
     window.innerWidth >= 1400 ? 3 : window.innerWidth > 996 ? 2 : 1
   );
   const [space, setSpace] = useState(window.innerWidth > 996 ? -120 : 0);
-  const [sm, setSm] = useState(window.innerWidth > 576);
+  const [sm, setSm] = useState(window.innerWidth < 576);
   window.addEventListener("resize", (e) => {
     window.innerWidth >= 1400
       ? setSize(3)

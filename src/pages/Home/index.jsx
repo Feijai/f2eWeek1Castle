@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { TextPlugin } from "gsap/TextPlugin";
 import Headers from "./Header";
@@ -8,18 +8,25 @@ import Lawn2 from "./Lawn2";
 import Theme from "./Theme";
 import { gsap } from "gsap";
 import Profession from "./Profession";
+import ProfessionMobile from "./ProfessionMobile";
 import Sponsor from "./Sponsor";
 import F2eSelection from "./F2eSelection";
 import Apply from "./Apply";
 import Comming from "./Comming";
 import ThemeMobile from "./ThemeMobile";
 import { HomeCss, PassAnimateCss } from "./style";
+import CastleMobile from "./CastleMobile";
+import LawnMobile from './LawnMobile'
 
 const Home = () => {
   const lawnRef = useRef();
   const castleRef = useRef();
   const attackRef = useRef();
 
+  const [sm, setSm] = useState(window.innerWidth < 768);
+  window.addEventListener("resize", (e) => {
+    window.innerWidth > 768 ? setSm(false) : setSm(true);
+  });
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -55,7 +62,7 @@ const Home = () => {
           opacity: 0,
         })
         .set("#menuTitle", {
-          className: "menuTitle rambleText",
+          className: "menuTitle rambleText text-center",
         })
         .set(".endWord", {
           backgroundColor: "#5C94FC",
@@ -134,17 +141,29 @@ const Home = () => {
   return (
     <>
       <Headers />
-      <HomeCss>
-        <div className="container">
-          <Castle castleRef={castleRef} attackRef={attackRef} />
-          <Lawn lawnRef={lawnRef} />
-          <Lawn2 />
-        </div>
-      </HomeCss>
-      <Profession />
-      <Comming />
-      <Theme />
-      <ThemeMobile />
+
+      {sm ? (
+        <>
+          <CastleMobile />
+          <LawnMobile />
+          <ProfessionMobile />
+          <ThemeMobile />
+        </>
+      ) : (
+        <>
+          <HomeCss>
+            <div className="container">
+              <Castle castleRef={castleRef} attackRef={attackRef} />
+              <Lawn lawnRef={lawnRef} />
+              <Lawn2 />
+            </div>
+          </HomeCss>
+          <Profession />
+          <Comming />
+          <Theme />
+        </>
+      )}
+
       <Apply />
       <F2eSelection />
       <Sponsor />

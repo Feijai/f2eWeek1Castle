@@ -1,49 +1,50 @@
 import styled from "styled-components";
 
 export const AttackCss = styled.div`
-    bottom : 254px;
-    height: 154px;
-    background: rgba(255, 255, 255, 0.7);
+  bottom: 254px;
+  height: 154px;
+  background: rgba(255, 255, 255, 0.7);
 
-    h2{
-        width:1033px;
-        height:112px;
-        margin:0;
-        color:#A8A7A5;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 96px;
-        line-height: 112px;
-    }
-    img{
-        width: 1048px;
-        height: 139px;
-    }
-`
+  h2 {
+    width: 100%;
+    max-width: 1033px;
+    position: relative;
+    height: 112px;
+    margin: 0;
+    color: #a8a7a5;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 112px;
+  }
+  img {
+    width: 1048px;
+    height: 139px;
+  }
+`;
 
 export const CastleCss = styled.div`
-    height:863px;
-    background-color:black;
-    .fire1{
-        width:12.656%;
-        height: 23.64%;      
-        left:72.28% ;
-        top:32.05%
-    }
-    .fire2{
-        width:15.39%;
-        height: 28.73%;     
-        bottom:16.62%;
-        left:8.82%;
-    }
-    .fire3{
-        width:15.54%;
-        height:29.05%;
-        bottom:-5%;
-        left:71.15%;
-    }
-`
-
+  height: 863px;
+  background-color: black;
+  .fire1 {
+    width: 12.656%;
+    height: 23.64%;
+    left: 72.28%;
+    top: 32.05%;
+  }
+  .fire2 {
+    width: 15.39%;
+    height: 28.73%;
+    bottom: 16.62%;
+    left: 8.82%;
+  }
+  .fire3 {
+    width: 15.54%;
+    height: 29.05%;
+    bottom: -5%;
+    left: 71.15%;
+  }
+`;
 
 export const TitleCss = styled.div`
     width: calc(100% - 5rem);
@@ -58,8 +59,18 @@ export const TitleCss = styled.div`
         font-size:12.5rem;
         font-weight:400;
         line-height:14.5rem;
-
+        position: relative;
+        z-index:0;
+        &::before {
+            content: attr(dataStorke);
+            position: absolute;
+            z-index: -1;
+            -webkit-text-stroke: 5px black;
+            text-stroke: 5px black;
+          }
     }
+
+
     .endWord{
         position:absolute;
         bottom:0;
@@ -85,4 +96,4 @@ export const TitleCss = styled.div`
         }
     }
 
-`
+`;
