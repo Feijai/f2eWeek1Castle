@@ -3,7 +3,7 @@ import { LevelCardCss } from './style'
 
 const LevelCard = (props) => {
     const { pic, title, text, company, week } = props
-    console.log(text)
+    
     return (
         <LevelCardCss className={`${week}`} >
             <img src={pic} alt="" className='w-100' />

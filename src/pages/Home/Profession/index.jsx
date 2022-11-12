@@ -40,12 +40,10 @@ const Profession = () => {
     const handleMouseOut = (e) => {
         e.target.style["-webkit-filter"] = "grayscale(1)"
         e.target.style.border = "6px solid #FFFFFF"
-        console.log(handleFilterData('no'))
         setRole(...handleFilterData('no'))
         setWidth('w-100')
 
     }
-    console.log(role)
     return (
         <ProfessionCss className='bg-black text-white position-relative'>
             {role?.name==='no' && <img src={liting} alt="" className='liting position-absolute s-0 top-0 h-100'/>}
