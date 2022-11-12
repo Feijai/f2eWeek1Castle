@@ -25,7 +25,7 @@ export const SponsorCss = styled.div`
   }
 
   .swiper-slide {
-    align-self: center
+    align-self: center;
     transition: 0.7s;
     align-self: center;
 
@@ -113,15 +113,16 @@ export const SponsorCss = styled.div`
       width:48.61%
       p{
         font-size:3rem;
-    }}
+      }
+    }
     .swiper-slide-active {
       .text {
         font-size: 4rem;
       }
     }
   }
- @media (min-width:576px){
-  height:875px
+ @media (min-width:576px) {
+  height: 875px;
  }
 `;
 

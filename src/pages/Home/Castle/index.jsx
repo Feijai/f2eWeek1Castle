@@ -18,7 +18,7 @@ export default function Castle({ castleRef, attackRef }) {
           <div className="endWord">互動式網頁設計</div>
         </div>
       </TitleCss>
-      <img src={castle} alt="" className="w-100 position-absolute bottom-0" />
+      <img src={castle} alt="" className=" position-absolute bottom-0 castle start-50" />
       <img src={fire} alt="" className="fire fire1 position-absolute" />
       <img src={fire} alt="" className="fire fire2 position-absolute" />
       <img src={fire} alt="" className="fire fire3 position-absolute" />

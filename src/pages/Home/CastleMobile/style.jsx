@@ -68,6 +68,15 @@ export const TitleCss = styled.div`
     font-size: 56px;
     font-weight: 400;
     line-height: 100%;
+    position: relative;
+        z-index:0;
+        &::before {
+            content: attr(dataStorke);
+            position: absolute;
+            z-index: -1;
+            -webkit-text-stroke: 2px black;
+            text-stroke: 2px black;
+          }
   }
   .endWord {
     font-size: 24px;

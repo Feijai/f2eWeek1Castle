@@ -14,36 +14,84 @@ export const AttackCss = styled.div`
     color: #a8a7a5;
     font-style: normal;
     font-weight: 400;
-    font-size: 96px;
+    font-size: 62px;
     line-height: 112px;
   }
   img {
     width: 1048px;
     height: 139px;
   }
+
+    @media (min-width: 992px) {
+        h2{
+            font-size:82px;
+        }
+    }
+
+    @media (min-width: 1200px){
+        h2{
+            font-size: 96px;
+        }
+    }
 `;
 
 export const CastleCss = styled.div`
+overflow: hidden;
   height: 863px;
   background-color: black;
+  .castle{
+    transform:translate(-50%,0);
+  }
   .fire1 {
-    width: 12.656%;
-    height: 23.64%;
+    width: 24.656%;
+    height: auto;
     left: 72.28%;
-    top: 32.05%;
+    top: 35.05%;
   }
   .fire2 {
     width: 15.39%;
-    height: 28.73%;
+    height: auto;
     bottom: 16.62%;
     left: 8.82%;
   }
   .fire3 {
     width: 15.54%;
-    height: 29.05%;
+    height: auto;
     bottom: -5%;
     left: 71.15%;
   }
+  @media (min-width: 992px) {
+        .menuTitle{
+            font-size:8.5rem;
+        }
+        .fire1 {
+            width: 19.656%;
+            left: 72.28%;
+            top: 32.05%;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .menuTitle{
+            font-size:10.5rem;
+        }
+    }
+
+    @media (min-width: 1400px){
+        .fire1 {
+            width: 12.656%;
+            left: 72.28%;
+            top: 32.05%;
+        }
+        .fire2 {
+            bottom: 16.62%;
+            left: 8.82%;
+        }
+        .fire3 {
+            bottom: -5%;
+            left: 71.15%;
+        }
+    }
 `;
 
 export const TitleCss = styled.div`
@@ -56,7 +104,7 @@ export const TitleCss = styled.div`
     top:43px;
     padding : 0 calc(1.5625rem - 12px);
     .menuTitle{
-        font-size:12.5rem;
+        font-size:6rem;
         font-weight:400;
         line-height:14.5rem;
         position: relative;
@@ -80,19 +128,23 @@ export const TitleCss = styled.div`
         font-weight:400;
         transform : translate(0%,60%)
     }
-    @media (max-width: 1400px){
+
+
+    @media (min-width: 992px) {
         .menuTitle{
-            font-size:10rem;
+            font-size:8.5rem;
         }
     }
-    @media (max-width: 1200px) {
+
+    @media (min-width: 1200px) {
         .menuTitle{
-            font-size:7.5rem;
+            font-size:10.5rem;
         }
     }
-    @media (max-width: 992px) {
+
+    @media (min-width: 1400px){
         .menuTitle{
-            font-size:5rem;
+            font-size:12.5rem;
         }
     }
 

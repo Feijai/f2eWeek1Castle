@@ -11,7 +11,7 @@ export default function CastleMobile() {
   return (
     <CastleMobileCss className="bg-black container position-relative">
       <TitleCss>
-        <h1 className="menuTitle text-center rambleText" id="menuTitle">
+        <h1 className="menuTitle text-center rambleText" dataStorke="The F2E 4th">
           The F2E 4th
         </h1>
         <div className="text-end text-white">互動式網頁設計</div>
@@ -23,7 +23,7 @@ export default function CastleMobile() {
       <img src={tree2} alt="" className="yellowTree tree3 position-absolute" />
       <img src={tree2} alt="" className="yellowTree tree4 position-absolute" />
       <img src={yuushamobile} alt="" className="yuusha position-absolute" />
-      <img src={bluemobile} alt="" className="blue position-absolute"/>
+      <img src={bluemobile} alt="" className="blue position-absolute" />
     </CastleMobileCss>
   );
 }

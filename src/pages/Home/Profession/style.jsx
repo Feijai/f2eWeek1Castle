@@ -82,6 +82,7 @@ export const ProfessionCss = styled.div`
           width: 7.5rem;
           height: 7.5rem;
         }
+    } 
   }
   @media (min-width: 1200px) {
     .title {
@@ -110,4 +111,4 @@ export const ProfessionCss = styled.div`
       }
     }
   }
-`;
+`
