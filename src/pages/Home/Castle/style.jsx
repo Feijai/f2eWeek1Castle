@@ -91,6 +91,9 @@ overflow: hidden;
             bottom: -5%;
             left: 71.15%;
         }
+        .castle{
+            width:100%
+        }
     }
 `;
 
