@@ -77,7 +77,7 @@ const Home = () => {
         .timeline({
           scrollTrigger: {
             trigger: ".yuusha",
-            markers: true,
+            // markers: true,
             start: "top 85%",
             end: "top 5%",
             scrub: true,
