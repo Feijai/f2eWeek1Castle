@@ -56,6 +56,11 @@ export const CommingCss = styled.div`
     .spark {
       left: 85%;
     }
+    .coner {
+      width: 250px;
+      bottom: 22%;
+      left: 5%;
+    }
   }
   @media (min-width: 1200px) {
     .titleComming {
@@ -63,6 +68,11 @@ export const CommingCss = styled.div`
     }
     .spark {
       left: 82%;
+    }
+    .coner {
+      width: 280px;
+      bottom: 20%;
+      left: 5%;
     }
   }
   @media (min-width: 1400px) {
